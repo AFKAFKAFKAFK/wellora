@@ -59,7 +59,7 @@ header {
     transform: translateY(-2px);
     transition: transform 0.2s ease;
 }
-.hero {
+.hero, .fitur, .about {
     display: flex;
     width: 90%;
     max-width: 1100px;
@@ -138,17 +138,6 @@ header {
 .tagline {
     font-size: 15px;
     font-weight: 600;
-}
-.fitur {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 60px;
-    align-items: center;
-    max-width: 1100px;
-    width: 90%;
-    gap: 24px;
 }
 .fitur-card {
     display: flex;
@@ -302,4 +291,58 @@ header {
     color: #2FA866;
     font-weight: 600;
     margin: 0;
+}
+.about {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(18,55,42,0.04);
+    border: 1px solid #E5E9E8;
+    padding: 50px 40px;
+}
+.about-kiri {
+
+}
+.about-title {
+    font-size: 36px;
+    color: #12372A;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 16px;
+}
+.about-desc {
+    font-size: 15px;
+    color: #52606D;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.value-card {
+    display: flex;
+    gap: 16px;
+    background-color: #F8FCF9;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 1px solid #E5E9E8;
+    margin-bottom: 18px;
+}
+.value-icon {
+    background-color: #E2F7EE;
+    width: 60px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #2EAD70;
+    font-size: 20px;
+}
+.value-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #12372A;
+    margin-bottom: 4px;
+}
+.value-desc {
+    font-size: 15px;
+    color: #52606D;
+    line-height: 1.5;
 }
