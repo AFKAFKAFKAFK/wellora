@@ -21,6 +21,15 @@ header {
     justify-content: space-between;
     padding: 16px 32px;
 }
+footer {
+    background-color: #12362a;
+    box-shadow: 0 4px 20px rgba(18,55,42,0.06);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px 32px;
+    color: white;
+}
 .nav-logo {
     font-size: 22px;
     font-weight: 800;
@@ -59,7 +68,7 @@ header {
     transform: translateY(-2px);
     transition: transform 0.2s ease;
 }
-.hero, .fitur, .about {
+.hero, .fitur, .about , .hubungi-kami, .card-information, .footer-atas, .footer-bawah {
     display: flex;
     width: 90%;
     max-width: 1100px;
@@ -299,9 +308,6 @@ header {
     border: 1px solid #E5E9E8;
     padding: 50px 40px;
 }
-.about-kiri {
-
-}
 .about-title {
     font-size: 36px;
     color: #12372A;
@@ -345,4 +351,213 @@ header {
     font-size: 15px;
     color: #52606D;
     line-height: 1.5;
+}
+.about-kanan {
+
+}
+.box-about-kanan {
+    background-color: #12372A;
+    color: white;
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 25px rgba(18,55,42,0.15);
+}
+.title-about-kanan {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: white;
+}
+.desc-about-kanan {
+    font-size: 14px;
+    color: #CBEFDB;
+    line-height: 1.5;
+}
+.card-about-kanan {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+}
+.card-item {
+    background-color: #1C4227;
+    padding: 16px 24px;
+    flex: 1.5;
+    width: 240px;
+    border-radius: 16px;
+}
+.card-item-judul {
+    font-size: 20px;
+    font-weight: 800;
+    color: #00DE43;
+    margin-bottom: 4px;
+}
+.card-item-desc {
+    font-size: 12px;
+    color: #CBEFDB;
+}
+.hubungi-kami {
+    padding: 50px 40px;
+    display: block;
+    text-align: center;
+}
+.contact-title {
+    font-size: 36px;
+    color: #12372A;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    padding: 0 200px;
+}
+.contact-desc {
+    font-size: 15px;
+    color: #52606D;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    padding: 0 200px;
+}
+.card-item-information {
+    display: flex;
+    gap: 16px;
+    background-color: #F8FCF9;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 1px solid #E5E9E8;
+    margin-bottom: 18px;
+}
+.icon-information {
+    background-color: #E2F7EE;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #2EAD70;
+    font-size: 20px;
+}
+.text-information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.title-information {
+    font-size: 14px;
+    font-weight: 600;
+    color: #52606D;
+    margin-bottom: 4px;
+}
+.desc-information {
+    font-size: 18px;
+    color: #12372A;
+    font-weight: 700;
+}
+.information-kanan {
+    border: 1px solid #E5E9E8;
+    border-radius: 16px;
+    background-color: #F8FCF9;
+    padding: 16px 20px;
+}
+.title-form {
+    font-size: 24px;
+    font-weight: 700;
+    color: #12372A;
+    margin-bottom: 16px;
+}
+.desc-form {
+    font-size: 14px;
+    color: #52606D;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    flex: 1;
+}
+.form-group label {
+    font-size: 14px;
+    color: #12372A; 
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+.form-row {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+}
+.form-input, .form-textarea {
+    display: flex;
+    padding: 10px;
+    border: 1px solid #E5E9E8;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+.form-contact button {
+    display: flex;
+    width: 100%;
+    background-color: #2EAD70;
+    color: white;
+    padding: 16px 0;
+    justify-content: center;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    gap: 8px;
+}
+.nav-link {
+    text-decoration: none;
+    color: WHITE;
+    font-weight: 700;
+    font-size: 15px;
+}
+.logo-footer {
+    font-size: 22px;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+}
+.footer-atas {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 32px;
+}
+.desc-footer {
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    color: #CBEFDB;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+.list-footer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+.garis-footer {
+    width: 60%;
+    margin: 0 auto;
+    height: 0.1px;
+    opacity: 0.2;
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #CBEFDB;
+    padding: 16px 0;
+    margin: 0 auto;
 }
