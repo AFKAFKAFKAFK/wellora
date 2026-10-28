@@ -21,11 +21,11 @@
 
             <!-- MENU -->
             <nav class="nav-menu">
-                <a href="#" class="nav-item active">Beranda</a>
-                <a href="#" class="nav-item">Fitur</a>
-                <a href="#" class="nav-item">Tentang Kami</a>
-                <a href="#" class="nav-item">Artikel</a>
-                <a href="#" class="nav-item">Kontak</a>
+                <a href="#beranda" class="nav-item active">Beranda</a>
+                <a href="#fitur" class="nav-item">Fitur</a>
+                <a href="#tentang" class="nav-item">Tentang Kami</a>
+                <a href="#artikel" class="nav-item">Artikel</a>
+                <a href="#kontak" class="nav-item">Kontak</a>
             </nav>
             <!-- TOMBOL -->
             <div class="nav-button">
@@ -33,7 +33,7 @@
             </div>
         </header>
         <!-- hero -->
-        <section class="hero">
+        <section class="hero" id="beranda">
             <div class="text-hero">
                 <span class="badge-hero"><i class="fa-solid fa-heart"></i> Kesehatanmu, Perjalananmu, Prioritasmu</span>
                 <h1 class="judul-hero">Hidup Lebih Baik,<br> Badan Lebih Sehat</h1>
@@ -47,7 +47,7 @@
             </div>
         </section>
         <!-- fitur -->
-        <section class="fitur">
+        <section class="fitur" id="fitur">
             <div class="fitur-card">
                 <span class="icon-fitur"><i class="fa-solid fa-person-running"></i></span>
                 <h2 class="judul-fitur">Program Terpersonalisasi</h2>
@@ -70,118 +70,167 @@
             </div>
         </section>
         <!-- Solusi -->
-        <section>
-    <div class="text-solusi">
-        <div class="solusi-header">
-            <span class="badge-hero">Semua yang Anda Butuhkan</span>
-            <h1 class="judul-solusi">Solusi Kesehatan Lengkap<br> dalam Satu Aplikasi</h1>
-            <p class="deskripsi-solusi">Wellora memadukan kebugaran, nutrisi, kualitas tidur dan ketenangan pikiran<br> dalam satu aplikasi elegan untuk membantu Anda mencapai hidup terbaik</p>
-        </div>
-        <div class="solusi-body">
-            <div class="solusi-kiri">
-                <ul class="list-solusi">
-                    <li>Antarmuka yang mudah digunakan dan ramah bagi pemula</li>
-                    <li>Wawasan kesehatan & kebugaran berbasis riset ilmiah</li>
-                    <li>Terhubung otomatis dengan perangkat pintar favorit Anda</li>
-                    <li>Dukungan penuh serta motivasi harian setiap waktu</li>
-                </ul>
-            </div>
-            
-            <div class="solusi-kanan">
-                <div class="solusi-card">
-                    <span class="icon-solusi"><i class="fa-solid fa-fire"></i></span>
-                    <p class="judul-solusi-card">Kalori Aktif</p>
-                    <h2 class="statistika-solusi">320 kkal</h2>
-                    <p class="motivasi-solusi">+12% dibanding kemarin</p>
+        <section id="dashboard">
+            <div class="text-solusi">
+                <div class="solusi-header">
+                    <span class="badge-hero">Semua yang Anda Butuhkan</span>
+                    <h1 class="judul-solusi">Solusi Kesehatan Lengkap<br> dalam Satu Aplikasi</h1>
+                    <p class="deskripsi-solusi">Wellora memadukan kebugaran, nutrisi, kualitas tidur dan ketenangan pikiran<br> dalam satu aplikasi elegan untuk membantu Anda mencapai hidup terbaik</p>
                 </div>
-                <div class="solusi-card">
-                    <span class="icon-solusi"><i class="fa-solid fa-shoe-prints"></i></span>
-                    <p class="judul-solusi-card">Langkah Harian</p>
-                    <h2 class="statistika-solusi">12.367</h2>
-                    <p class="motivasi-solusi">Target: 10.000 langkah</p>
-                </div>
-                <div class="solusi-card">
-                    <span class="icon-solusi"><i class="fa-solid fa-droplet"></i></span>
-                    <p class="judul-solusi-card">Asupan Air</p>
-                    <h2 class="statistika-solusi">1.5 L <span class="per">/ 2,5 L</span></h2>
-                    <p class="motivasi-solusi">60% tercapai</p>
-                </div>
-                <div class="solusi-card">
-                    <span class="icon-solusi"><i class="fa-solid fa-person-swimming"></i></span>
-                    <p class="judul-solusi-card">Waktu Olahraga</p>
-                    <h2 class="statistika-solusi">20 <span class="per">/ 30 mnt</span></h2>
-                    <p class="motivasi-solusi">Pertahankan semangatmu!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-        </section>
-        <!-- About -->
-        <section class="about">
-            <div class="about-kiri">
-    <span class="badge-about"><i class="fa-solid fa-leaf"></i> Tentang Wellora</span>
-    <h2 class="about-title">Membangun Generasi yang Lebih Sehat, Aktif, dan Bahagia.</h2>
-    <p class="about-desc">Wellora didirikan dengan misi sederhana: membuat gaya hidup sehat menjadi kebiasaan harian yang mudah, menyenangkan, dan berkelanjutan untuk siapa saja. Kami menggabungkan kecerdasan teknologi dengan riset kesehatan terpercaya.</p>
-    <div class="about-values">
-        <!-- card -->
-        <div class="value-card">
-            <div class="value-icon">
-                <i class="fa-solid fa-flask-vial"></i>
-            </div>
-            <div class="value-text">
-                <div class="value-title">Berbasis Sains & Medis</div>
-                <div class="value-desc">Setiap rekomendasi nutrisi dan rutinitas latihan divalidasi oleh dokter serta ahli gizi tersertifikasi.</div>
-            </div>
-        </div>
-        <!-- card 2 -->
-         <div class="value-card">
-            <div class="value-icon">
-                <i class="fa-solid fa-shield-halved"></i>
-            </div>
-            <div class="value-text">
-                <div class="value-title">Privasi & Keamanan Data</div>
-                <div class="value-desc">Data kesehatan pribadi Anda dienkripsi penuh dan tidak pernah diperjualbelikan kepada pihak ketiga.</div>
-            </div>
-        </div>
-        <!-- card 3 -->
-         <div class="value-card">
-            <div class="value-icon">
-                <i class="fa-solid fa-users"></i>
-            </div>
-            <div class="value-text">
-                <div class="value-title">Komunitas Saling Mendukung</div>
-                <div class="value-desc">Temukan teman seperjuangan untuk saling berbagi progres dan menyemangati setiap hari.</div>
-            </div>
-        </div>
-    </div>
-            </div>
-            <div class="about-kanan">
-                <div class="box-about-kanan">
-                    <h2 class="title-about-kanan">Perjalanan Kita Bersama</h2>
-                    <p class="desc-about-kanan">Sejak diluncurkan, Wellora terus bertumbuh mendampingi puluhan ribu individu mencapai versi terbaik dari diri mereka.</p>
-                    <div class="card-about-kanan">
-                        <div class="card-item">
-                            <h2 class="card-item-judul">50K+</h2>
-                            <p class="card-item-desc">Pengguna Aktif</p>
+                <div class="solusi-body">
+                    <div class="solusi-kiri">
+                        <ul class="list-solusi">
+                            <li>Antarmuka yang mudah digunakan dan ramah bagi pemula</li>
+                            <li>Wawasan kesehatan & kebugaran berbasis riset ilmiah</li>
+                            <li>Terhubung otomatis dengan perangkat pintar favorit Anda</li>
+                            <li>Dukungan penuh serta motivasi harian setiap waktu</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="solusi-kanan">
+                        <div class="solusi-card">
+                            <span class="icon-solusi"><i class="fa-solid fa-fire"></i></span>
+                            <p class="judul-solusi-card">Kalori Aktif</p>
+                            <h2 class="statistika-solusi">320 kkal</h2>
+                            <p class="motivasi-solusi">+12% dibanding kemarin</p>
                         </div>
-                         <div class="card-item">
-                            <h2 class="card-item-judul">98%</h2>
-                            <p class="card-item-desc">Kepuasan Pengguna</p>
+                        <div class="solusi-card">
+                            <span class="icon-solusi"><i class="fa-solid fa-shoe-prints"></i></span>
+                            <p class="judul-solusi-card">Langkah Harian</p>
+                            <h2 class="statistika-solusi">12.367</h2>
+                            <p class="motivasi-solusi">Target: 10.000 langkah</p>
                         </div>
-                         <div class="card-item">
-                            <h2 class="card-item-judul">120+</h2>
-                            <p class="card-item-desc">Pakar Kesehatan</p>
+                        <div class="solusi-card">
+                            <span class="icon-solusi"><i class="fa-solid fa-droplet"></i></span>
+                            <p class="judul-solusi-card">Asupan Air</p>
+                            <h2 class="statistika-solusi">1.5 L <span class="per">/ 2,5 L</span></h2>
+                            <p class="motivasi-solusi">60% tercapai</p>
                         </div>
-                         <div class="card-item">
-                            <h2 class="card-item-judul">4.8<i class="fa-solid fa-star"></i></h2>
-                            <p class="card-item-desc">Rating Aplikasi</p>
+                        <div class="solusi-card">
+                            <span class="icon-solusi"><i class="fa-solid fa-person-swimming"></i></span>
+                            <p class="judul-solusi-card">Waktu Olahraga</p>
+                            <h2 class="statistika-solusi">20 <span class="per">/ 30 mnt</span></h2>
+                            <p class="motivasi-solusi">Pertahankan semangatmu!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- About -->
+        <section class="about" id="tentang">
+            <div class="about-kiri">
+            <span class="badge-about"><i class="fa-solid fa-leaf"></i> Tentang Wellora</span>
+            <h2 class="about-title">Membangun Generasi yang Lebih Sehat, Aktif, dan Bahagia.</h2>
+            <p class="about-desc">Wellora didirikan dengan misi sederhana: membuat gaya hidup sehat menjadi kebiasaan harian yang mudah, menyenangkan, dan berkelanjutan untuk siapa saja. Kami menggabungkan kecerdasan teknologi dengan riset kesehatan terpercaya.</p>
+            <div class="about-values">
+                <!-- card -->
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fa-solid fa-flask-vial"></i>
+                    </div>
+                    <div class="value-text">
+                        <div class="value-title">Berbasis Sains & Medis</div>
+                        <div class="value-desc">Setiap rekomendasi nutrisi dan rutinitas latihan divalidasi oleh dokter serta ahli gizi tersertifikasi.</div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="value-text">
+                        <div class="value-title">Privasi & Keamanan Data</div>
+                        <div class="value-desc">Data kesehatan pribadi Anda dienkripsi penuh dan tidak pernah diperjualbelikan kepada pihak ketiga.</div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="value-text">
+                        <div class="value-title">Komunitas Saling Mendukung</div>
+                        <div class="value-desc">Temukan teman seperjuangan untuk saling berbagi progres dan menyemangati setiap hari.</div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                    <div class="about-kanan">
+                        <div class="box-about-kanan">
+                            <h2 class="title-about-kanan">Perjalanan Kita Bersama</h2>
+                            <p class="desc-about-kanan">Sejak diluncurkan, Wellora terus bertumbuh mendampingi puluhan ribu individu mencapai versi terbaik dari diri mereka.</p>
+                            <div class="card-about-kanan">
+                                <div class="card-item">
+                                    <h2 class="card-item-judul">50K+</h2>
+                                    <p class="card-item-desc">Pengguna Aktif</p>
+                                </div>
+                                <div class="card-item">
+                                    <h2 class="card-item-judul">98%</h2>
+                                    <p class="card-item-desc">Kepuasan Pengguna</p>
+                                </div>
+                                <div class="card-item">
+                                    <h2 class="card-item-judul">120+</h2>
+                                    <p class="card-item-desc">Pakar Kesehatan</p>
+                                </div>
+                                <div class="card-item">
+                                    <h2 class="card-item-judul">4.8<i class="fa-solid fa-star"></i></h2>
+                                    <p class="card-item-desc">Rating Aplikasi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <!-- Artikel -->
+         <section class="artikel" id="artikel">
+            <div class="edukasi">
+                <span class="badge-artikel"><i class="fa-solid fa-book-open"></i> Edukasi Kesehatan</span>
+                <h1 class="artikel-title">Artikel & Tips Gaya Hidup Sehat Terkini</h1>
+                <p class="artikel-desc">Perluas wawasan Anda seputar nutrisi, tips olahraga praktis, dan manajemen stres untuk menjaga vitalitas tubuh sepanjang hari</p>
+            </div>
+            <div class="artikel-card-container">
+                <!-- Card 1 -->
+                <div class="artikel-card">
+                    <img src="https://placeholder.com" alt="Nutrisi" class="card-image">
+                    <div class="artikel-card-body">
+                        <div class="artikel-card-meta">
+                            <span class="category nutrisi">Nutrisi</span>
+                            <span class="reading-time">5 mnt baca</span>
+                        </div>
+                        <h3 class="artikel-card-title">5 Langkah Memulai Pola Makan Sehat Tanpa Diet Menyiksa</h3>
+                        <p class="artikel-card-description">Pelajari cara menyeimbangkan porsi karbohidrat, protein, dan serat harian secara bertahap tanpa perlu rasa lapar berlebihan.</p>
+                        <a href="#" class="artikel-card-link">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="artikel-card">
+                    <img src="https://placeholder.com" alt="Kebugaran" class="card-image">
+                    <div class="artikel-card-body">
+                        <div class="artikel-card-meta">
+                            <span class="category kebugaran">Kebugaran</span>
+                            <span class="reading-time">4 mnt baca</span>
+                        </div>
+                        <h3 class="artikel-card-title">Berapa Langkah Kaki yang Sebenarnya Dibutuhkan Tubuh?</h3>
+                        <p class="artikel-card-description">Kupas tuntas mitos 10.000 langkah dan fakta ilmiah tentang kebutuhan gerak harian untuk menjaga kesehatan jantung dan stamina.</p>
+                        <a href="#" class="artikel-card-link">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="artikel-card">
+                    <img src="https://placeholder.com" alt="Pola Tidur" class="card-image">
+                    <div class="artikel-card-body">
+                        <div class="artikel-card-meta">
+                            <span class="category tidur">Pola Tidur</span>
+                            <span class="reading-time">6 mnt baca</span>
+                        </div>
+                        <h3 class="artikel-card-title">Rahasia Tidur Nyenyak Demi Produktivitas Maksimal</h3>
+                        <p class="artikel-card-description">Kualitas tidur menentukan metabolisme tubuh. Terapkan 4 kebiasaan malam ini untuk bangun dengan energi penuh keesokan hari.</p>
+                        <a href="#" class="artikel-card-link">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+         </section>
         <!-- Contact -->
-        <section class="contact">
+        <section class="contact" id="kontak">
             <div class="hubungi-kami">
                 <span class="badge-about"><i class="fa-solid fa-headset"></i> Hubungi kami</span>
                 <h1 class="contact-title">Ada Pertanyaan? Kami Siap Membantu</h1>
@@ -254,12 +303,12 @@
                 </div>
                 <p class="desc-footer">Sehabat setia Anda menuju kehidupan yang lebih sehat, aktif, dan seimbang<br>setiap hari.</p>
                 <ul class="list-footer">
-                    <li><a class="nav-link" href="#">Beranda</a></li>
-                    <li><a class="nav-link" href="#">Fitur</a></li>
-                    <li><a class="nav-link" href="#">Dashboard</a></li>
-                    <li><a class="nav-link" href="#">Tentang Kami</a></li>
-                    <li><a class="nav-link" href="#">Artikel</a></li>
-                    <li><a class="nav-link" href="#">Kontak</a></li>
+                    <li><a class="nav-link" href="#beranda">Beranda</a></li>
+                    <li><a class="nav-link" href="#fitur">Fitur</a></li>
+                    <li><a class="nav-link" href="#dashboard">Dashboard</a></li>
+                    <li><a class="nav-link" href="#tentang">Tentang Kami</a></li>
+                    <li><a class="nav-link" href="#artikel">Artikel</a></li>
+                    <li><a class="nav-link" href="#kontak">Kontak</a></li>
                 </ul>
             </div>
             <hr class="garis-footer">
@@ -267,5 +316,27 @@
                 <p class="copyright">© 2026 Wellora. Seluruh hak cipta dilindungi. Dibuat untuk pembelajaran CSS Flexbox Siswa Kelas X RPL</p>
             </div>
         </footer>
+        <section class="back-to-top">
+            <button class="back-to-top-btn" id="backToTopBtn" onclick="keAtasHalaman()">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+            <script>
+                // setiap user scroll, menjalankan fungsi di dalamnya, berulang-ulang selama user melakukan scroll, untuk menampilkan tombol back to top
+                window.addEventListener('scroll', function() {
+                    const btnTop = document.getElementById('backToTopBtn');
+                    if (window.scrollY > 300) {
+                        btnTop.style.display = 'flex';
+                    } else {
+                        btnTop.style.display = 'none';
+                    }
+                });
+                function keAtasHalaman() {
+                    window.scrollTo({
+                        top: 0
+                        // scroll ke atas halaman
+                    });
+                };
+                </script>
+        </section>
     </body>
 </html>

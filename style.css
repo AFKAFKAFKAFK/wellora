@@ -1,13 +1,29 @@
+:root {
+    --hijau-color: #2EAD70;
+    --hijau-gelap-color: #12372A;
+    --text-color: #1F2933;
+    --text-description-color: #52606D;
+    --size-font: 16px;
+    --size-font-hero: 48px;
+    --size-font-judul: 38px;
+}
+
 /* reset all */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
+section {
+    scroll-margin-top: 100px;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #F8FCF9;
-    color: #1F2933;
+    background-color: var(--background-color);
+    color: var(--text-color);
     line-height: 1.6;
 }
 /* header dan navbar */
@@ -20,6 +36,9 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 16px 32px;
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
 }
 footer {
     background-color: #12362a;
@@ -33,7 +52,7 @@ footer {
 .nav-logo {
     font-size: 22px;
     font-weight: 800;
-    color: #12372A;
+    color: var(--hijau-gelap-color);
     text-decoration: none;
 }
 .nav-menu {
@@ -42,17 +61,17 @@ footer {
     gap: 28px;
 }
 .nav-item {
-    color: #1F2933;
+    color: var(--text-color);
     text-decoration:none;
     font-weight:600;
     font-size:15px;
 }
 .nav-item:hover, .nav-item.active {
-    color: #2EAD70;
+    color: var(--hijau-color);
     transition: color 0.2s ease;
 }
 .btn-unduh {
-    background-color: #2EAD70;
+    background-color: var(--hijau-color);
     padding: 10px 22px;
     border-radius: 25px;
     color: white;
@@ -81,7 +100,7 @@ footer {
 }
 .badge-hero {
     background-color: #e7f7ee;
-    color: #2EAD70;
+    color: var(--hijau-color);
     padding: 8px 16px;
     border-radius: 20px;
     border: 1px solid #CBEFBD;
@@ -94,15 +113,15 @@ footer {
     height: auto;
 }
 .judul-hero {
-    font-size: 48px;
-    color: #12372A;
+    font-size: var(--size-font-judul);
+    color: var(--hijau-gelap-color);
     font-weight: 800;
     line-height: 1.15;
     margin-bottom: 20px;
 }
 .deskripsi-hero {
-    font-size: 16px;
-    color: #52606D;
+    font-size: var(--size-font-description);
+    color: var(--text-description-color);
     line-height: 1.65;
     margin-bottom: 30px;
 }
@@ -116,7 +135,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 8px;
-    background-color: #2EAD70;
+    background-color: var(--hijau-color);
     text-decoration: none;
     font-weight: 700;
     padding: 10px 22px;
@@ -135,12 +154,12 @@ footer {
     display: flex;
     align-items: center;
     gap: 8px;
-    border: 2px solid #2EAD70;
+    border: 2px solid var(--hijau-color);
     background-color: white;
     text-decoration: none;
     font-weight: 700;
     padding: 10px 22px;
-    color: #2EAD70;
+    color: var(--hijau-color);
     border-radius: 25px;
     font-size: 12px;
 }
@@ -165,7 +184,7 @@ footer {
 }
 .judul-fitur {
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--size-font-description);
 }
 .icon-fitur {
     background-color: #E6F7ED;
@@ -212,7 +231,7 @@ footer {
     margin-bottom: 16px;
 }
 .judul-solusi {
-    font-size: 38px;
+    font-size: var(--size-font-judul);
     color: #11382b;
     font-weight: 800;
     line-height: 1.2;
@@ -220,7 +239,7 @@ footer {
 }
 .deskripsi-solusi {
     color: #5b7367;
-    font-size: 15px;
+    font-size: var(--size-font-description);
     line-height: 1.6;
     margin-bottom: 0;
 }
@@ -310,21 +329,21 @@ footer {
 }
 .about-title {
     font-size: 36px;
-    color: #12372A;
+    color: var(--hijau-gelap-color);
     font-weight: 800;
     line-height: 1.25;
     margin-bottom: 16px;
 }
 .about-desc {
     font-size: 15px;
-    color: #52606D;
+    color: var(--text-description-color);
     line-height: 1.6;
     margin-bottom: 25px;
 }
 .value-card {
     display: flex;
     gap: 16px;
-    background-color: #F8FCF9;
+    background-color: var(--background-color);
     padding: 16px 20px;
     border-radius: 16px;
     border: 1px solid #E5E9E8;
@@ -338,25 +357,25 @@ footer {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    color: #2EAD70;
+    color: var(--hijau-color);
     font-size: 20px;
 }
 .value-title {
     font-size: 15px;
     font-weight: 700;
-    color: #12372A;
+    color: var(--hijau-gelap-color);
     margin-bottom: 4px;
 }
 .value-desc {
     font-size: 15px;
-    color: #52606D;
+    color: var(--text-description-color);
     line-height: 1.5;
 }
 .about-kanan {
 
 }
 .box-about-kanan {
-    background-color: #12372A;
+    background-color: var(--hijau-gelap-color);
     color: white;
     padding: 30px;
     border-radius: 24px;
@@ -403,7 +422,7 @@ footer {
 }
 .contact-title {
     font-size: 36px;
-    color: #12372A;
+    color: var(--hijau-gelap-color);
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 16px;
@@ -411,7 +430,7 @@ footer {
 }
 .contact-desc {
     font-size: 15px;
-    color: #52606D;
+    color: var(--text-description-color);
     line-height: 1.6;
     margin-bottom: 25px;
     padding: 0 200px;
@@ -419,7 +438,7 @@ footer {
 .card-item-information {
     display: flex;
     gap: 16px;
-    background-color: #F8FCF9;
+    background-color: var(--background-color);
     padding: 16px 20px;
     border-radius: 16px;
     border: 1px solid #E5E9E8;
@@ -433,7 +452,7 @@ footer {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    color: #2EAD70;
+    color: var(--hijau-color);
     font-size: 20px;
 }
 .text-information {
@@ -444,29 +463,29 @@ footer {
 .title-information {
     font-size: 14px;
     font-weight: 600;
-    color: #52606D;
+    color: var(--text-description-color);
     margin-bottom: 4px;
 }
 .desc-information {
     font-size: 18px;
-    color: #12372A;
+    color: var(--hijau-gelap-color);
     font-weight: 700;
 }
 .information-kanan {
     border: 1px solid #E5E9E8;
     border-radius: 16px;
-    background-color: #F8FCF9;
+    background-color: var(--background-color);
     padding: 16px 20px;
 }
 .title-form {
     font-size: 24px;
     font-weight: 700;
-    color: #12372A;
+    color: var(--hijau-gelap-color);
     margin-bottom: 16px;
 }
 .desc-form {
     font-size: 14px;
-    color: #52606D;
+    color: var(--text-description-color);
     line-height: 1.5;
     margin-bottom: 16px;
 }
@@ -478,7 +497,7 @@ footer {
 }
 .form-group label {
     font-size: 14px;
-    color: #12372A; 
+    color: var(--hijau-gelap-color); 
     margin-bottom: 8px;
     font-weight: 700;
 }
@@ -502,7 +521,7 @@ footer {
 .form-contact button {
     display: flex;
     width: 100%;
-    background-color: #2EAD70;
+    background-color: var(--hijau-color);
     color: white;
     padding: 16px 0;
     justify-content: center;
@@ -560,4 +579,28 @@ footer {
     color: #CBEFDB;
     padding: 16px 0;
     margin: 0 auto;
+}
+.back-to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--hijau-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(46, 173, 112, 0.4);
+    transition: all 0.2s ease;
+    z-index: 1000;
+    display: none;
+}
+.back-to-top-btn:hover {
+    background-color: var(--hijau-gelap-color);
+    transform: translateY(-2px);
 }
