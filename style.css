@@ -453,7 +453,7 @@ footer {
     justify-content: center;
     grid-template-columns: repeat(3, 350px);
 }
-.artikel-card {
+.artikel-card, .artikel-card-berita {
     background-color: white;
     border-radius: 24px;
     display: flex;
@@ -712,4 +712,96 @@ footer {
 .back-to-top-btn:hover {
     background-color: var(--hijau-gelap-color);
     transform: translateY(-2px);
+}
+.berita-pertama, .berita-kedua, .berita-ketiga {
+    display: none;
+}
+.berita-pertama, .berita-kedua, .berita-ketiga {
+    display: flex;
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    flex-direction: column;
+}
+.btn-kembali {
+    font-weight: 700;
+    align-self: flex-start;
+    color: var(--hijau-color);
+    text-decoration: none;
+    border: 1px solid #CBEFBD;
+    padding: 14px;
+    border-radius: 30px;
+}
+.btn-kembali:hover {
+    background-color: lightgray;
+    transition: background-color 0.2s ease;
+}
+.reading-time-berita {
+    display: flex;
+    font-size: 14px;
+    color: gray;
+    padding: 4px;
+    gap: 10px;
+    align-items: center;
+}
+.artikel-card-meta-berita {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.artikel-card-body-berita {
+    padding: 40px 60px;
+}
+.artikel-tag-berita {
+    background-color: #e2f4eb;
+    color: #279058;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.artikel-title-berita {
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+.artikel-description-berita {
+    font-size: 18px;
+    color: var(--text-description-color);
+    line-height: 1.8 
+}
+.box-artikel-subtitle-berita {
+    margin-top: 20px;
+}
+.artikel-subtitle-berita {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.artikel-penjelasan-berita {
+    line-height: 1.8;
+    color: var(--text-description-color);
+    font-size: 18px;
+}
+.artikel-lainnya {
+    display: flex;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-self: flex-start;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+.artikel-card-meta-lainnya {
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-description-color)
 }
