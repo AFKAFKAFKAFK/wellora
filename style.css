@@ -371,9 +371,6 @@ footer {
     color: var(--text-description-color);
     line-height: 1.5;
 }
-.about-kanan {
-
-}
 .box-about-kanan {
     background-color: var(--hijau-gelap-color);
     color: white;
@@ -414,6 +411,118 @@ footer {
 .card-item-desc {
     font-size: 12px;
     color: #CBEFDB;
+}
+.badge-artikel {
+    display: inline-block;
+    color: black;
+    padding: 6px 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.edukasi { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 50px 40px; 
+  flex-direction: column; 
+  text-align: center;
+}
+.artikel-title { 
+  display: flex; 
+  font-size: 36px; 
+  color: var(--hijau-gelap-color); 
+  font-weight: 800; 
+  line-height: 1.2; 
+  margin-bottom: 16px; 
+  align-items: center; 
+  justify-content: center;
+}
+.artikel-desc { 
+  font-size: 14px; 
+  color: var(--text-description-color); 
+  line-height: 1.6; 
+  margin-bottom: 25px; 
+  max-width: 600px;
+  margin: 0 auto;
+}
+.artikel-card-container {
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    gap: 25px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 350px);
+}
+.artikel-card {
+    background-color: white;
+    border-radius: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border: 1px solid #E5EFEB;
+    box-shadow: 0 8px 24px rgba(18, 55, 42, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease
+}
+.artikel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(18, 55, 42, 0.08);
+}
+.artikel-card-body {
+    margin: 20px;
+}
+.artikel-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.artikel-image {
+    padding: 0;
+    margin: 0;
+}
+.card-image {
+    object-fit: cover;
+    transition: transform 0.3s ease
+}
+.card-image:hover {
+    transform: scale(1.06)
+}
+.artikel-card-meta {
+    display: flex;
+    justify-content: space-between;
+}
+.artikel-tag {
+    display: inline-block;
+    background-color: #e2f4eb;
+    color: #279058;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.reading-time {
+    font-size: 14px;
+    color: gray;
+    padding: 4px;
+}
+.artikel-card-description {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: var(--text-description-color)
+}
+.artikel-card-link {
+    color: var(--hijau-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+.badge-about {
+    display: inline-block;
+    color: black;
+    padding: 6px 16px;
+    font-size: 18px;
+    font-weight: 600;
 }
 .hubungi-kami {
     padding: 50px 40px;
